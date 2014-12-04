@@ -4,6 +4,7 @@ git config --global user.email "travis@travis-ci.org"
 git config --global user.name "travis-ci"
 
 # Commit and Push the Changes
+cp ./CNAME ./_book/
 cd _book
 git init
 git checkout -b gh-pages
