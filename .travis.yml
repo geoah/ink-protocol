@@ -1,8 +1,7 @@
 language: node_js
 node_js:
-  - "0.11"
   - "0.10"
-install: node install gitbook
+install: npm install gitbook
 script: gitbook build
 before_script:
  - chmod +x ./.publish.sh
