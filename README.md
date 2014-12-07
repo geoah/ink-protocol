@@ -15,7 +15,7 @@ You can choose where you host your identity and your data, you can set it up on 
 Public Hubs where people can simply create their Identities without much hassle will be most likely available at some point. More tech savvy users can setup private hubs for themselves or for their family and friends.
 Identities can share data between them regardless of the hub they reside in.
 
-*A prototype Hub implementation is [Haiku](https://github.com/ink-protocol/haiku). Feel free to set it up and check it out or even contribute to it.*
+*A prototype Hub implementation is currently being developed in Go (golang) but is still in a very early stage.*
 
 You can connect to other users using their identities and group them so it is easier to share something with them. Once you connect with an identity you will have access to the data they share publicly. You can think of this like Twitter's follow feature. They can then connect back to you to share anything specifically with you.
 
@@ -43,6 +43,5 @@ eg. A messaging application will request access to the `message.schema.protocol.
 
 ## Now what?
 
-There are a lot of things we have in mind for Ink and even more we haven't even thought of.
-If you'd like to contribute to any part, object to something or just say hi, just hop by the [Ink Protocol repository](https://github.com/ink-protocol/protocol) and create an issue.
+If you'd like to chat, object, share your opinion, contribute or just say hi, just drop by the [Ink Protocol repository](https://github.com/geoah/ink-protocol) and create an issue or just fork it. :)
 
