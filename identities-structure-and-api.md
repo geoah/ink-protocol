@@ -5,9 +5,10 @@
 ```javascript
 {
     "_id": "e45a4156277d2b845a74b99c175abf1c322f472a717c7345dfc0a5dd2b9bd70c",
-    "_pk": {},
     "_signature": {},
     "_rev": 17,
+    "_jwk": {},
+    "jwk": {},
     "fqdn": "jane.haiku.ink",
     "name": "Jane Doe",
     "nickname": "Jay",
