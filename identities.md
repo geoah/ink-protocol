@@ -43,15 +43,3 @@ To create an identity you need to first select a Hub that will store its data. H
 Haiku being a very proof of concept Hub is very flexible with new Identities. Any A record or CNAME you point to an IP address that Haiku listens to will be able to become an Identity.
 Let's assume that we want to create a new identity on the `haiku.ink` Hub with the FQDN `jane.me` that we own. We create a CNAME for `jane.me` that points to `haiku.ink` and make a `POST` request with `Content-Type: application/json` and our details to `https://jane.ink`. This should create our identity for us and we should be able to start using it.
 A public hub could also allow registrations on new identities using any of its subdomains (*.some-hub.tld).
-
-## Hubs
-
-Identities live inside Hubs. Each Hub can contain multiple identities and anyone can create their own Hub.
-Public Hubs where people can simply create their Identities without much hassle will be most likely available once the protocol is stable enough and more tech savvy users can setup private Hubs for themselves or for their family and friends.
-
-Identities can share data between them regardless of the Hub they stored in.
-
-A prototype Hub implementation is [Haiku](https://github.com/ink-protocol/haiku). Feel free to set it up to test it or contribute to it.
-
-
-
