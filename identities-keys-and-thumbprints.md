@@ -4,12 +4,13 @@
 
 When creating a new identity you will be able to provide a [key pair](http://en.wikipedia.org/wiki/Public-key_cryptography) or allow the Hub to create one for you.
 
-Each identity has two keys: A private (stored as _jwk) and a public one (stored as jwk).
-Secret keys are sensitive and are used to sign the instances the identity's owner creates. Keeping these keys secure is very important and needs to be properly researched.
-*For the time being it will be stored inside the identity next to the public one.*  
-Public keys are available to anyone and are used to verify the authenticity of instances.
+Each identity has two keys: A private and a public one.  
+The keys are stored using the structure proposed by [JWK](https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-key/) [draft 37](http://tools.ietf.org/html/draft-ietf-jose-json-web-key-37) inside the identity.  
+The private key is stored as _jwk and is available only to the identity's owner while the public key is stored as jwk and is available to anyone.
 
-The keys are stored in the identities using the structure proposed by [JWK](https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-key/) [draft 37](http://tools.ietf.org/html/draft-ietf-jose-json-web-key-37) as single object under `_jwk` in the identity's details.
+Keys are used to verify the identity's and its instances' authenticity and validity. All instances are signed by their owner so their origin and integrity can be verified.
+
+*The private key is extremely sensitive and keeping it secure is of the utmost importance; that being said, for the time being it is stored in plain sight.*
 
 ```javascript
 {
@@ -50,3 +51,5 @@ This will effectively create a hash of the identity's Public key that we can use
     "id": "1fd13882380f27b3176f294ce5834e01e1185d4f8e559e0d86928998e9d8cd18"
 }
 ```
+
+*[Note:geoah] A crude example of keys and thumbprint generation and encoding in golang can be found [here](https://gist.github.com/geoah/525b9cc76121ba3e29f8).*
