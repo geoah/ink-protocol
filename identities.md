@@ -14,6 +14,7 @@ Personal details such as name, nickname, company etc can be set in multiple lang
 
 ```javascript
 {
+   "id": "1fd13882380f27b3176f294ce5834e01e1185d4f8e559e0d86928998e9d8cd18",
    "name": "Jane Doe",
    "nickname": "Jay",
    "displayPicture": "/jane-haiky-me.png",
