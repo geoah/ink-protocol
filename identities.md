@@ -39,8 +39,17 @@ Personal details such as name, nickname, company etc can be set in multiple lang
 
 ## Identity creation/registration
 
-To create an identity you need to first select a Hub that will store its data. How each Hub will handle new identity registration is up to them.
+To create an Identity you need to setup or join an existing Identity Server.
+Identity Servers tha allow multiple Identities can handle new user registration
+any way they want.  
 
-Haiku being a very proof of concept Hub is very flexible with new Identities. Any A record or CNAME you point to an IP address that Haiku listens to will be able to become an Identity.
-Let's assume that we want to create a new identity on the `haiku.ink` Hub with the FQDN `jane.me` that we own. We create a CNAME for `jane.me` that points to `haiku.ink` and make a `POST` request with `Content-Type: application/json` and our details to `https://jane.ink`. This should create our identity for us and we should be able to start using it.
-A public hub could also allow registrations on new identities using any of its subdomains (*.some-hub.tld).
+Haiku being a very proof of concept Hub is very flexible with new Identities.
+Any A record or CNAME you point to an IP address that Haiku listens to will be
+able to become an Identity.  
+Let's assume that we want to create a new identity on the `haiku.ink` Hub with
+the FQDN `jane.me` that we own. We create a CNAME for `jane.me` that points to
+`haiku.ink` and make a `POST` request with `Content-Type: application/json` and
+our details to `https://jane.ink`. This should create our identity for us and we
+should be able to start using it.  
+A public hub could also allow registrations on new identities using any of its
+subdomains (`*.some-hub.tld`).

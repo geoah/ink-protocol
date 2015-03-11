@@ -6,18 +6,19 @@ Ink's goal is to allow applications to use your information and data without tak
 
 You are not restricted to keep using a single application just from fear of not losing your contacts or data, neither you have to force your friends to use the same applications as you.
 
-## Identities, hubs and relationships
+## Identities and relationships
 
-To use Ink you must first create an **identity**.
-Each Identity is unique and in the form of a hostname (FQDN to be exact) For example `alice.haiku.ink` or `robert.me` and is how users identify and connect to one another.
+Each person has their own Identity. Each Identity is unique and is displayed in the form of a [fully qualified domain name](http://en.wikipedia.org/wiki/Fully_qualified_domain_name). e.g. `alice.haiku.ink`, `robert.me`.  
+This is used for people to identify and connect to one another.  
 
-You can choose where you host your identity and your data, you can set it up on your own server or use a public one. Servers that hold identities are called **hubs**. You can at any point move to a different one without losing your data or connections.
-Public Hubs where people can simply create their Identities without much hassle will be most likely available at some point. More tech savvy users can setup private hubs for themselves or for their family and friends.
-Identities can share data between them regardless of the hub they reside in.
+In order to create an Identity you need to either setup an Identity Server or join an existing one.
+One or more Identities can exist on the same Identity Server.  
+You can at any point move to a different one without losing your data or connections.  
+Identities can share data between them regardless of the Identity Server they are in.
 
-*A prototype Hub implementation is currently being developed in Go (golang) but is still in a very early stage.*
+*A prototype Identity Server implementation is currently being developed in Go (golang) but is still in a very early stage.*
 
-You can connect to other users using their identities and group them so it is easier to share something with them. Once you connect with an identity you will have access to the data they share publicly. You can think of this like Twitter's follow feature. They can then connect back to you to share anything specifically with you.
+You can connect to other users using their identities and group them so it is easier to share something with them. Once you connect to an identity you will have access to the data they share publicly. You can think of this like Twitter's follow feature. They can then connect back to you to share anything specifically with you.
 
 ## Schemas and instances
 
@@ -44,4 +45,3 @@ eg. A messaging application will request access to the `message.schema.protocol.
 ## Now what?
 
 If you'd like to chat, object, share your opinion, contribute or just say hi, just drop by the [Ink Protocol repository](https://github.com/geoah/ink-protocol) and create an issue or just fork it. :)
-
