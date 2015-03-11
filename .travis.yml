@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '0.10'
+install: npm install gitbook
+script: gitbook build
+before_script:
+- chmod +x ./.publish.sh
+after_script:
+- ./.publish.sh
+env:
+  global:
+  - secure: gV1EDdkPo8kKmyyZEdpQoeoSU2Vs0Bnw9SFONeMO1T/kPBtBcWSDSwhO+05QSVJc1MJEdLsvofu20bq54ORHjRbjH9fGv78t3Ihoat92EY7Hwd+tcvIQzxMbFEEKC3ZQklDmgmYsfFUKntyZsldrB+tX4+KOM1xn70Gw5eZI8mM=
