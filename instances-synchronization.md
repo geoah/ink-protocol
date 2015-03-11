@@ -1,3 +1,0 @@
-# Synchronization
-
-[TODO]

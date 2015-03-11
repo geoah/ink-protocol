@@ -9,6 +9,5 @@
    * [Instances](instances.md)
        * [Structure & API](instances-structure-and-api.md)
        * [Signatures](instances-signatures.md)
-       * [Synchronization](instances-synchronization.md)
    * [Services](services.md)
 	   * [Structure & API](services-structure-and-api.md)
