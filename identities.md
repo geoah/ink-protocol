@@ -12,27 +12,6 @@ eg. Users can select to only show their nickname to everyone, their work related
 
 Personal details such as name, nickname, company etc can be set in multiple languages. This way others can select their preffered language and see your details in the language of their choosing. Selecting a specific language is done via the [Accept-Language HTTP Header](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.4)
 
-```javascript
-{
-   "id": "1fd13882380f27b3176f294ce5834e01e1185d4f8e559e0d86928998e9d8cd18",
-   "name": "Jane Doe",
-   "nickname": "Jay",
-   "displayPicture": "/jane-haiky-me.png",
-   "born": "1970-01-01T00:00:00.000Z",
-   "familyName": ["Doe"],
-   "givenName": ["Jane"],
-   "gender": "Female",
-   "homepage": [],
-   "honorificPrefix": "Dr",
-   "honorificSuffix": "PhD",
-   "nationality": ["PN"],
-   "telephone": [],
-   "address": []
-}
-```
-
-[TODO]
-
 # Identities / Relationships
 
 [TODO]
